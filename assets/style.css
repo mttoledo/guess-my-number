@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jersey 10", sans-serif;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(23, 23, 23);
+}
+
+header {
+    display: flex;
+    flex-flow: column;
+    border-bottom: 5px solid white;
+}
+
+.top-items {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.top-items p {
+    color: white;
+    font-size: 1.4rem;
+}
+
+header h1 {
+    font-size: 3rem;
+    letter-spacing: 5px;
+    margin: auto;
+    padding: 2rem 0 1.8rem;
+    color: white;
+}
+
+div.number {
+    margin: auto;
+    background-color: white;
+    padding: 0.8rem 6rem;
+    font-size: 4rem;
+    position: relative;
+    transform: translateY(50px);
+}
+
+main {
+    margin-top: 7rem;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.left input {
+    background-color: rgb(27, 27, 27);
+    border-style: solid;
+    border-color: white;
+    padding: 1rem;
+    height: 5rem;
+    width: 12rem;
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+}
+
+.left input:focus {
+    outline: none;
+}
+
+.button {
+    width: 6rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.4rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.right {
+    color: white;
+    font-size: 1.4rem;
+}
+
+.message {
+    padding-bottom: 3rem;
+}
+
+.label-score {
+    padding-bottom: 0.4rem;
+}

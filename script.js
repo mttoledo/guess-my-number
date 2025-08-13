@@ -25,13 +25,18 @@ document.querySelector('.check').addEventListener('click', function () {
 
     } else {
         if (score > 1) {
-        score--;
-        document.querySelector('.score').textContent = score;
+            score--;
+            document.querySelector('.score').textContent = score;
+            if (guess > numeroAleatorio) {
+                document.querySelector('.message').textContent = "📉 Less";
+            } else if (guess < numeroAleatorio) {
+                document.querySelector('.message').textContent = "📈 Greater";
+            }
         } else {
             score = 0;
             document.querySelector('.score').textContent = score;
             document.body.style.backgroundColor = '#9b0a0a';
-            document.querySelector('.message').textContent = "You lost, better luck next time!"
+            document.querySelector('.message').textContent = "💥 You lost, better luck next time!"
             document.querySelector('.check').disabled = true;
         }
     }
